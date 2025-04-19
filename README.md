@@ -1,5 +1,20 @@
 # Getting Started with Create React App
 
+src/
+├── assets/         # Images, fonts, etc.
+├── components/     # Reusable UI components 
+│   ├── common/     # Buttons, cards, etc.
+│   ├── layout/     # Header, Footer, etc.
+│   └── sections/   # Homepage sections, etc.
+├── context/        # React Context for state management
+├── data/           # Static data (if any)
+├── hooks/          # Custom React hooks
+├── pages/          # Page components
+├── styles/         # Global styles, themes
+├── utils/          # Helper functions
+├── App.js          # Main app component
+└── index.js        # Entry point
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
