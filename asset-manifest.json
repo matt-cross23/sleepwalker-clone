@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/sleepwalker-clone/static/css/main.400572c9.css",
+    "main.js": "/sleepwalker-clone/static/js/main.99015986.js",
+    "static/js/453.f40f84e0.chunk.js": "/sleepwalker-clone/static/js/453.f40f84e0.chunk.js",
+    "index.html": "/sleepwalker-clone/index.html",
+    "main.400572c9.css.map": "/sleepwalker-clone/static/css/main.400572c9.css.map",
+    "main.99015986.js.map": "/sleepwalker-clone/static/js/main.99015986.js.map",
+    "453.f40f84e0.chunk.js.map": "/sleepwalker-clone/static/js/453.f40f84e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.400572c9.css",
+    "static/js/main.99015986.js"
+  ]
+}
