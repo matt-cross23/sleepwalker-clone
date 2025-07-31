@@ -1,0 +1,60 @@
+/* Hero.css */
+
+.hero {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/background-image.jpg'); Dark overlay on background image */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the background image */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Horizontally centers content */
+    text-align: center; /* Centers text */
+    color: black; /* White text for contrast */
+    padding: 0 20px; /* Side padding for smaller screens */
+  }
+  
+  .hero-content {
+    max-width: 800px; /* Limits the width of the content */
+    width: 100%; /* Ensures it fits within smaller screens */
+  }
+  
+  .hero-content h1 {
+    font-family: 'Arial', sans-serif; /* Clean, modern font (replace with site's font if needed) */
+    font-size: 48px; /* Large title size */
+    font-weight: 700; /* Bold for emphasis */
+    text-transform: uppercase; /* Matches the dramatic style */
+    margin-bottom: 20px; /* Spacing below title */
+    letter-spacing: 2px; /* Adds a subtle spacing for elegance */
+  }
+  
+  .hero-content p {
+    font-family: 'Arial', sans-serif; /* Consistent font */
+    font-size: 20px; /* Smaller size for tagline */
+    font-weight: 400; /* Lighter weight for contrast */
+    line-height: 1.5; /* Improves readability */
+    max-width: 600px; /* Limits tagline width */
+    margin: 0 auto; /* Centers tagline within container */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 36px; /* Smaller title on mobile */
+      letter-spacing: 1px; /* Reduced spacing */
+    }
+  
+    .hero-content p {
+      font-size: 16px; /* Smaller tagline on mobile */
+      max-width: 90%; /* Wider on smaller screens for readability */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-content h1 {
+      font-size: 28px; /* Even smaller title for very small screens */
+    }
+  
+    .hero-content p {
+      font-size: 14px; /* Even smaller tagline */
+    }
+  }
