@@ -20,7 +20,7 @@ function App() {
             <Router>
                 <Navbar />
                 <Routes>
-                     <Route path="/"
+                     <Route path="/sleepwalker-clone"
                      element={
                         <> {/* Use a React Fragment if you have multiple elements for the root page */}
                         <PlaylistPlayer
