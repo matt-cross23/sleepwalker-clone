@@ -9,10 +9,10 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
   const defaultYoutubeUrl = "https://www.youtube.com/embed/videoseries?list=PLB62B2CB80905D918";
 
   return (
-    <div class="">
+    <div class="playlist-container" style={styles.playlistWrapper}>
         <div style={styles.container}>
             <h2>Your Playlist Hub</h2>
-            <div style={styles.playerWrapper}>
+            <div>
                 <h3>SoundCloud Playlist</h3>
                 <iframe
                 width="100%"
@@ -46,6 +46,10 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
 };
 
 const styles = {
+  playlistWrapper:{
+    width: '45%',
+
+  },
   container: {
     display: 'flex',
     flexDirection: 'column',
@@ -58,6 +62,7 @@ const styles = {
     boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
     fontFamily: 'Arial, sans-serif',
     color: '#333',
+
   },
   playerWrapper: {
     border: '1px solid #ddd',
