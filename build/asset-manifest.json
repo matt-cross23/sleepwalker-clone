@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sleepwalker-clone/static/css/main.92e7a06f.css",
+    "main.js": "/sleepwalker-clone/static/js/main.ae8694d1.js",
+    "static/js/453.f40f84e0.chunk.js": "/sleepwalker-clone/static/js/453.f40f84e0.chunk.js",
+    "static/media/unnamed.png": "/sleepwalker-clone/static/media/unnamed.f7f98951ec74f985e89a.png",
+    "index.html": "/sleepwalker-clone/index.html",
+    "main.92e7a06f.css.map": "/sleepwalker-clone/static/css/main.92e7a06f.css.map",
+    "main.ae8694d1.js.map": "/sleepwalker-clone/static/js/main.ae8694d1.js.map",
+    "453.f40f84e0.chunk.js.map": "/sleepwalker-clone/static/js/453.f40f84e0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92e7a06f.css",
+    "static/js/main.ae8694d1.js"
+  ]
+}
