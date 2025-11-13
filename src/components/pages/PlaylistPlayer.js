@@ -11,9 +11,8 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
   return (
     <div class="playlist-container" style={styles.playlistWrapper}>
         <div style={styles.container}>
-            <h2>Your Playlist Hub</h2>
+            <h2 class="title1">SLEEPWALKER PLAYLISTS</h2>
             <div>
-                <h3>SoundCloud Playlist</h3>
                 <iframe
                 width="100%"
                 height="300" // SoundCloud embeds often have a fixed height for visual players
@@ -25,20 +24,16 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
                 style={styles.iframeBase}
                 ></iframe>
             </div>
-
-            <div style={styles.playerWrapper}>
-                <h3>YouTube Playlist</h3>
-                <div style={styles.youtubeResponsiveContainer}>
-                <iframe
-                    src={youtubePlaylistUrl || defaultYoutubeUrl}
-                    frameBorder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="YouTube Playlist"
-                    style={styles.iframeResponsive}
-                ></iframe>
-                </div>
-            </div>
+              <div style={styles.youtubeResponsiveContainer}>
+              <iframe
+                  src={youtubePlaylistUrl || defaultYoutubeUrl}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title="YouTube Playlist"
+                  style={styles.iframeResponsive}
+              ></iframe>
+              </div>
         </div>
     </div>
 
@@ -47,21 +42,26 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
 
 const styles = {
   playlistWrapper:{
-    width: '45%',
-
+    width: '100%',
+    margin: "50px",
+    color: '#2fb606'
   },
   container: {
     display: 'flex',
     flexDirection: 'column',
     gap: '30px',
     maxWidth: '900px',
-    margin: '30px auto',
+    margin: '100px auto',
     padding: '20px',
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#293335',
     borderRadius: '10px',
     boxShadow: '0 4px 15px rgba(0,0,0,0.1)',
     fontFamily: 'Arial, sans-serif',
     color: '#333',
+    position: 'absolute',
+    width: '100%',
+    left: '15%',
+    top: '8%'
 
   },
   playerWrapper: {
@@ -72,8 +72,9 @@ const styles = {
     boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
   },
   iframeBase: {
-    border: 'none',
+    border: 'blue',
     borderRadius: '4px',
+    // color: 'red'
   },
   // Styles for a responsive YouTube iframe (16:9 aspect ratio)
   youtubeResponsiveContainer: {
@@ -82,6 +83,7 @@ const styles = {
     paddingBottom: '56.25%', /* 16:9 Aspect Ratio */
     height: 0,
     overflow: 'hidden',
+    backgroundColor: '#293335',
   },
   iframeResponsive: {
     position: 'absolute',

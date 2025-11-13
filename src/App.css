@@ -42,3 +42,8 @@
     transform: rotate(360deg);
   }
 }
+
+.playlist-container{
+    width: 100%;
+    margin-top: 100px;
+}
