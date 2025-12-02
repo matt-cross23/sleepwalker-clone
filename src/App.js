@@ -17,11 +17,10 @@ function App() {
     const mySoundcloudPlaylist = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/957719626&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
     const myYoutubePlaylist = "https://www.youtube.com/embed/videoseries?list=PLV8HfLfzVplYb4L0sWOuWRSMJP0f5CUnV";
     return (
-        <Router basename='/'>
+        <Router>
             <div className="App">
-                    <Navbar />
                     <Routes>
-                        <Route exact path="/"
+                        <Route exact path="/sleepwalker-clone"
                         element={
                             <> {/* Use a React Fragment if you have multiple elements for the root page */}
                             <PlaylistPlayer
@@ -34,6 +33,7 @@ function App() {
                         <Route path="/mixes" element={<Mixes />} />
                         <Route path="/interviews" element={<Interviews />} />
                     </Routes>
+                    <Navbar />
             </div>
         </Router>
     );
