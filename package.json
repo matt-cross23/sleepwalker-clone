@@ -1,5 +1,5 @@
 {
-  "homepage": "http://matt-cross23.github.io/sleepwalker-clone",
+  "homepage": "https://matt-cross23.github.io/sleepwalker-clone/",
   "name": "sleepwalker-clone",
   "version": "0.1.0",
   "private": true,
@@ -9,6 +9,7 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.8.4",
+    "hamburger-react": "^2.5.2",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",

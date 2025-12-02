@@ -51,7 +51,6 @@ const styles = {
     flexDirection: 'column',
     gap: '30px',
     maxWidth: '900px',
-    margin: '100px auto',
     padding: '20px',
     backgroundColor: '#293335',
     borderRadius: '10px',

@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import {
     BrowserRouter as Router,
     Routes,
+    HashRouter,
     Route,
 } from "react-router-dom";
 import Mixes from "./components/pages/Mixes";
@@ -16,34 +17,25 @@ function App() {
     const mySoundcloudPlaylist = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/957719626&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true";
     const myYoutubePlaylist = "https://www.youtube.com/embed/videoseries?list=PLV8HfLfzVplYb4L0sWOuWRSMJP0f5CUnV";
     return (
-        <div className="App">
-            <Router>
-                <Navbar />
-                <Routes>
-                     <Route path="/sleepwalker-clone"
-                     element={
-                        <> {/* Use a React Fragment if you have multiple elements for the root page */}
-                        <PlaylistPlayer
-                            soundcloudPlaylistUrl={mySoundcloudPlaylist}
-                            youtubePlaylistUrl={myYoutubePlaylist}
+        <Router basename='/'>
+            <div className="App">
+                    <Navbar />
+                    <Routes>
+                        <Route exact path="/"
+                        element={
+                            <> {/* Use a React Fragment if you have multiple elements for the root page */}
+                            <PlaylistPlayer
+                                soundcloudPlaylistUrl={mySoundcloudPlaylist}
+                                youtubePlaylistUrl={myYoutubePlaylist}
+                            />
+                            </>
+                        }
                         />
-                        </>
-                    }
-                    />
-                    <Route exact path="/mixes" element={<Mixes />} />
-                    <Route path="/interviews" element={<Interviews />} />
-                    <Route
-                        path="/contact"
-                        // element={<Contact />}
-                    />
-                    {/* <Route path="/blogs" element={<Blogs />} />
-                    <Route
-                        path="/sign-up"
-                        element={<SignUp />}
-                    /> */}
-                </Routes>
-            </Router>
-        </div>
+                        <Route path="/mixes" element={<Mixes />} />
+                        <Route path="/interviews" element={<Interviews />} />
+                    </Routes>
+            </div>
+        </Router>
     );
 }
 

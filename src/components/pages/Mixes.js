@@ -20,14 +20,14 @@ const MixesData = [
 
 const Mixes = () => {
     return (
-        <div class="mixes_container">
+        <div class="interview_container">
             <nav className="nav-bar">
-                <h1>Mixes</h1>
+                <h1 class="title1">MIXES</h1>
             </nav>
             <div className="container">
                 {MixesData.map((mixes, index) => (
-                    <div className="mixes" key={index}>
-                        <h2>{mixes.title}</h2>
+                    <div className="interview" key={index}>
+                        <h2 class="title1">{mixes.title}</h2>
                         <iframe
                             className="youtube-frame"
                             src={`https://www.youtube.com/embed/${mixes.videoId}`}
@@ -36,7 +36,7 @@ const Mixes = () => {
                             allowFullScreen
                             title={mixes.title}
                         ></iframe>
-                        <p>{mixes.description}</p>
+                        <p class="interview-text">{mixes.description}</p>
                     </div>
                 ))}
             </div>
