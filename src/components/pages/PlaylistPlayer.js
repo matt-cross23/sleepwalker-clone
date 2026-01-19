@@ -11,7 +11,7 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
   return (
     <div class="playlist-container" style={styles.playlistWrapper}>
         <div style={styles.container}>
-            <h2 class="title1">SLEEPWALKER PLAYLISTS</h2>
+            <h2 class="title1">SLEEPWALKER ENTERTAINMENT</h2>
             <div>
                 <iframe
                 width="100%"

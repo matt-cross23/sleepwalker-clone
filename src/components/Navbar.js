@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <Hamburger toggled={isOpen} toggle={setOpen} />
+      {/* <Hamburger toggled={isOpen} toggle={setOpen} style="display: none" />
       {isOpen && (
         // Your menu content here
         <nav>
@@ -24,7 +24,7 @@ const Navbar = () => {
 
           </ul>
         </nav>
-      )}
+      )} */}
     </div>
   );
 };
