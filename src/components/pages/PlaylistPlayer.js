@@ -12,6 +12,10 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
     <div class="playlist-container" style={styles.playlistWrapper}>
         <div style={styles.container}>
             <h2 class="title1">SLEEPWALKER ENTERTAINMENT</h2>
+            {/* Put logos here for now */}
+            {/* <div>
+              <img src="" alt="facebook"></img>
+            </div> */}
             <div>
                 <iframe
                 width="100%"
