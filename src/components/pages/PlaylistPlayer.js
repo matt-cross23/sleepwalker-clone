@@ -1,5 +1,8 @@
 // src/PlaylistPlayer.js
 import React from 'react';
+import ytImg from './assets/youtube-app-icon.png';
+import ttImg from './assets/tiktok-rounded-square-icon.svg';
+import igImg from './assets/ig-instagram-icon.svg';
 
 const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
   // Default placeholder URLs in case props are not provided
@@ -13,9 +16,11 @@ const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
         <div style={styles.container}>
             <h2 class="title1">SLEEPWALKER ENTERTAINMENT</h2>
             {/* Put logos here for now */}
-            {/* <div>
-              <img src="" alt="facebook"></img>
-            </div> */}
+            <div class='logo-containers'>
+              <img className="app-icon" src={ytImg}></img>
+              <img className="app-icon" src={ttImg}></img>
+              <img className="app-icon" src={igImg}></img>
+            </div>
             <div>
                 <iframe
                 width="100%"
