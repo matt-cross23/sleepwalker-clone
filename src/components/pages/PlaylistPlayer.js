@@ -3,6 +3,7 @@ import React from 'react';
 import ytImg from './assets/youtube-app-icon.png';
 import ttImg from './assets/tiktok-rounded-square-icon.svg';
 import igImg from './assets/ig-instagram-icon.svg';
+import '../css/PlaylistPlayer.css'
 
 const PlaylistPlayer = ({ soundcloudPlaylistUrl, youtubePlaylistUrl }) => {
   // Default placeholder URLs in case props are not provided
